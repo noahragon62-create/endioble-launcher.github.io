@@ -3,64 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Launcher Official Endioble</title>
+    <title>Endioble Launcher</title>
     <style>
-        body {
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+        }
+        body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333;
+            background-color: #121214;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             text-align: center;
         }
-        .header {
-            background: linear-gradient(135deg, #a8c0ff, #fbc2eb);
-            padding: 60px 20px;
-            font-size: 2.5em;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        .card {
+            background: #202024;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 90%;
         }
-        .container {
-            padding: 40px 20px;
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: #0088cc;
         }
         p {
-            font-size: 1.2em;
-            margin: 15px 0;
+            color: #aaaaaa;
+            margin-bottom: 15px;
+            font-size: 1.1em;
         }
         .btn-download {
             display: inline-block;
-            background-color: #1e73be;
+            background-color: #0088cc;
             color: white;
-            padding: 15px 30px;
+            padding: 15px 32px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-            text-transform: uppercase;
+            border-radius: 8px;
+            font-size: 1.1em;
+            margin-top: 15px;
+            transition: background 0.2s;
         }
         .btn-download:hover {
-            background-color: #155a96;
+            background-color: #006699;
         }
-        .beta-tag {
-            margin-top: 40px;
-            color: #1e73be;
-            font-size: 2em;
+        .badge {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #ffcc00;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        Launcher Official Endioble
-    </div>
-
-    <div class="container">
+    <div class="card">
+        <h1>Launcher Official Endioble</h1>
         <p>Welcome To The Official Website of endioble launcher !</p>
         <p>Minecraft Server Faction Pvp and more !</p>
 
-        <a href="METS_LE_LIEN_DE_TON_EXE_ICI" class="btn-download">DOWNLOAD</a>
+        <a href="https://github.com/noahragon62-create/endioble-launcher.github.io/releases" class="btn-download">DOWNLOAD</a>
 
-        <div class="beta-tag">THIS IS A BETA VERSION</div>
+        <div>
+            <span class="badge">THIS IS A BETA VERSION</span>
+        </div>
     </div>
 
 </body>
